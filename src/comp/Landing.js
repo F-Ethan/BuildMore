@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import { Transition } from '@tailwindui/react'
-import logo from '../imgs/blueprints (2).jpg';
+import photo from '../imgs/blueprints (2).jpg';
+import logo from '../imgs/logo.jpg'
 
 function Landing() {
     const [isOpen, setIsOpen] = useState(false)
     return (
-        <div className="relative bg-white overflow-hiddeny">
+        <div className="relative bg-white overflow-hidden">
             <div className="max-w-screen-xl mx-auto">
                 <div className="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
                     <svg className="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2" fill="currentColor" viewBox="0 0 100 100" preserveAspectRatio="none">
@@ -17,7 +18,7 @@ function Landing() {
                             <div className="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
                                 <div className="flex items-center justify-between w-full md:w-auto">
                                     <a href="#" aria-label="Home">
-                                        <img className="h-8 w-auto sm:h-10" src="https://tailwindui.com/img/logos/workflow-mark-on-white.svg" alt="Logo"></img>
+                                        <img className="h-8 w-auto sm:h-10" src={logo} alt="Logo"></img>
                                     </a>
                                     <div className="-mr-2 flex items-center md:hidden">
                                         <button type="button" onClick={() => setIsOpen(!isOpen)} className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out" id="main-menu" aria-label="Main menu" aria-haspopup="true">
@@ -118,7 +119,7 @@ function Landing() {
                 </div>
             </div>
             <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-                <img className="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full" src={logo} alt=""></img>
+                <img className="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full" src={photo} alt="blue prints"></img>
             </div>
         </div>
 

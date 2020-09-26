@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Landing from './comp/Landing';
 import Home from './comp/Home';
+import Comparison from './comp/Comparison';
 import './App.css';
 // import tirangle from './imgs/tirangle.svg'
 function App() {
@@ -8,7 +9,7 @@ function App() {
   return (
     <div>
       <Landing />
-      <Home />
+      <Comparison />
     </div>
 
   );

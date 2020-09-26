@@ -1,7 +1,4 @@
 import React, { useState } from 'react';
-import { Transition } from '@tailwindui/react'
-import photo from '../imgs/blueprints (2).jpg';
-import logo from '../imgs/logo.jpg'
 
 function Landing() {
     const [isOpen, setIsOpen] = useState(false)

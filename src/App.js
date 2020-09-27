@@ -7,7 +7,7 @@ import './App.css';
 function App() {
   // const [isOpen, setIsOpen] = useState(false)
   return (
-    <div>
+    <div className="text-gray-900 bg-gray-100">
       <Landing />
       <Comparison />
     </div>

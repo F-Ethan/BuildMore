@@ -109,9 +109,9 @@ function Landing() {
               </a>
                                 </div>
                                 <div className="mt-3 sm:mt-0 sm:ml-3">
-                                    <a href="#" className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-indigo-700 bg-indigo-100 hover:text-indigo-500 hover:bg-blue-100 focus:outline-none focus:shadow-outline-indigo focus:border-indigo-300 transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10">
+                                    <button className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-indigo-700 bg-indigo-100 hover:text-indigo-500 hover:bg-blue-100 focus:outline-none focus:shadow-outline-indigo focus:border-indigo-300 transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10">
                                         View Portolio
-              </a>
+              </button>
                                 </div>
                             </div>
                         </div>

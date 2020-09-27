@@ -3,8 +3,8 @@ import { Transition } from '@tailwindui/react'
 import photo from '../imgs/blueprints (2).jpg';
 import logo from '../imgs/logo.jpg'
 
-import bathroomBefore from '../imgs/boban/bathroomBefore.JPG'
-import bathroomAfter from '../imgs/boban/BathroomAfter.jpg'
+// import bathroomBefore from '../imgs/boban/bathroomBefore.JPG'
+// import bathroomAfter from '../imgs/boban/BathroomAfter.jpg'
 
 function Comparison() {
     const [isOpen, setIsOpen] = useState(false)
@@ -13,12 +13,13 @@ function Comparison() {
         let imgs = {};
 
         r.keys().map((item, index) => {
-            imgs[item.replace('./', '')] = r(item);
+            imgs[index] = r(item);
         });
         return imgs;
     }
 
-    const imgs = importAll(require.context('../imgs', false, /\.jpg/));
+    const imgs = importAll(require.context('../imgs/boban', false, /\.jpg/));
+    console.log(imgs)
 
     return (
         <div className="justify-center mt-10 mb-16">
@@ -26,32 +27,43 @@ function Comparison() {
                 <div className="font-bold text-gray-500 capitalize tracking-wider border-b-4 border-aqua-400 pb-1">OUR WORK</div>
             </div>
 
-            <div className="grid lg:grid-cols-2 grid-cols-1 gap-4 w-full mx-5">
+            <div className="grid lg:grid-cols-2 grid-cols-1 gap-4 w-full px-5">
 
 
-                {/* {Object.keys(imgs).map((item, index) => {
-                    return ( */}
-                <div className="w-full overflow-hidden rounded">
-                    <div className="flex">
-                        <div className="flex-1">
-                            <img src={bathroomAfter} className="h-auto w-full object-cover"></img>
+                {Object.keys(imgs).map((item, index) => {
+                    if (index % 2) {
 
-                        </div>
-                        <div className="flex-1 ">
-                            <img src={bathroomBefore} className="h-auto w-full object-cover"></img>
+                    } else {
+                        return (
+                            <div className="w-full overflow-hidden rounded">
+                                <div className="flex shadow">
+                                    <div className="flex-1 ">
+                                        <p className="absolute m-2 px-1 rounded-full bg-teal-100 uppercase tracking-wider font-semibold text-xs text-gray-600">Before</p>
+                                        <img src={imgs[item]} className="h-auto w-full object-cover"></img>
 
-                        </div>
-                    </div>
-                    <div className="flex">
-                        <div className="px-6 w-full">
-                            <div className="bg-white p-6 -mt-10 shadow-lg">
-                                my title
+                                    </div>
+                                    <div className="flex-1">
+                                        <p className="absolute m-2 px-1 rounded-full bg-teal-100 uppercase tracking-wider font-semibold text-xs text-gray-600">After</p>
+                                        <img src={imgs[index + 1]} className="h-auto w-full object-cover"></img>
+
+                                    </div>
+                                </div>
+                                <div className="flex">
+                                    <div className="px-20 w-full">
+                                        <div className="bg-white p-6 -mt-10 shadow-lg ">
+                                            <h4> Bathroom Remodel</h4>
+                                            <div className="flex items-baseline">
+                                                <h5 className="text-gray-600"> $5,000 &bull;</h5>
+                                                <h5 className="ml-1 text-gray-600 text-sm"> two Weeks </h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
 
-                {/* })} */}
+                        )
+                    }
+                })}
 
             </div>
 

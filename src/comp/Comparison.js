@@ -1,7 +1,4 @@
 import React, { useState } from 'react';
-import { Transition } from '@tailwindui/react'
-import photo from '../imgs/blueprints (2).jpg';
-import logo from '../imgs/logo.jpg'
 
 // import bathroomBefore from '../imgs/boban/bathroomBefore.JPG'
 // import bathroomAfter from '../imgs/boban/BathroomAfter.jpg'
@@ -18,11 +15,11 @@ function Comparison() {
         return imgs;
     }
 
-    const imgs = importAll(require.context('../imgs/boban', false, /\.jpg/));
+    const imgs = importAll(require.context('../imgs/homepage', false, /\.jpg/));
     console.log(imgs)
 
     return (
-        <div className="justify-center mt-10 mb-16">
+        <div className="justify-center mt-10 mb-16" id="OurWork">
             <div className="bg-aqua mx-5 max-w-screen-xl flex justify-center w-full mb-4" >
                 <div className="font-bold text-gray-500 capitalize tracking-wider border-b-4 border-aqua-400 pb-1">OUR WORK</div>
             </div>
@@ -31,11 +28,9 @@ function Comparison() {
 
 
                 {Object.keys(imgs).map((item, index) => {
-                    if (index % 2) {
-
-                    } else {
+                    if (index % 2 == 0) {
                         return (
-                            <div className="w-full overflow-hidden rounded">
+                            <div className="w-full overflow-hidden rounded" key={index}>
                                 <div className="flex shadow">
                                     <div className="flex-1 ">
                                         <p className="absolute m-2 px-1 rounded-full bg-teal-100 uppercase tracking-wider font-semibold text-xs text-gray-600">Before</p>

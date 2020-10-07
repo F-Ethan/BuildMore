@@ -3,7 +3,7 @@ import { Transition } from '@tailwindui/react'
 import photo from '../imgs/blueprints (2).jpg';
 import logo from '../imgs/logo.jpg'
 
-function Header() {
+const Header = ({ toggelDisplay }) => {
     const [isOpen, setIsOpen] = useState(false)
     return (
         <div className="relative bg-gray-100 overflow-hidden">
@@ -20,13 +20,13 @@ function Header() {
                                     <div aria-label="Home">
                                         <img className="h-8 w-auto sm:h-10" src={logo} alt="Logo"></img>
                                     </div>
-                                    <div className="-mr-2 flex items-center md:hidden">
+                                    {/* <div className="-mr-2 flex items-center md:hidden">
                                         <button type="button" onClick={() => setIsOpen(!isOpen)} className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out" id="main-menu" aria-label="Main menu" aria-haspopup="true">
                                             <svg className="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
                                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
                                             </svg>
                                         </button>
-                                    </div>
+                                    </div> */}
                                 </div>
                             </div>
                             {/* <div className="hidden md:block md:ml-10 md:pr-4">
@@ -104,9 +104,9 @@ function Header() {
           </p>
                             <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                                 <div className="rounded-md shadow">
-                                    <a href="#" className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10">
+                                    <button onClick={() => toggelDisplay()} className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10">
                                         Request a Quote
-              </a>
+              </button>
                                 </div>
                                 {/* <div className="mt-3 sm:mt-0 sm:ml-3">
                                     <button className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-indigo-700 bg-indigo-100 hover:text-indigo-500 hover:bg-blue-100 focus:outline-none focus:shadow-outline-indigo focus:border-indigo-300 transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10">

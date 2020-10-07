@@ -14,8 +14,8 @@ function Footer() {
             <div className="flex items-center flex-wrap text-gray-600">
                 <ul className="md:flex-1 mx-auto pt-8 text-center px-4 h-auto block">
                     <li className="list-none blod text-gray-800 border-b-4 border-red-200"> Build More </li>
-                    <li className="list-none pt-2 text-sm"> Licensed general contractor <br /> in the state of California </li>
-                    <li className="list-none pt-2 text-sm"> License Number: 123456 </li>
+                    <li className="list-none pt-2 text-sm"> Licensed General Contractor <br /> in the State of California </li>
+                    <li className="list-none pt-2 text-sm"> License Number: 1234567 </li>
                 </ul>
                 <ul className="md:flex-1 mx-auto pt-8 text-center px-4 h-auto block">
                     <li className="list-none blod text-gray-800 border-b-4 border-blue-200">Find us on socail media </li>
@@ -44,11 +44,11 @@ function Footer() {
                     <li className="list-none blod text-gray-800 border-b-4 border-green-200"> More links </li>
                     <li className="list-none pt-2 text-sm ">
                         <a href="https://www.nickkerley.com" className="hover:text-blue-300 italic" target="_blank">
-                            Nick Kerley real estate
+                            Nick Kerley Real Estate
                         </a>
                     </li>
                     <li className="list-none pt-2 text-sm">
-                        Built and designed by: &nbsp;
+                        Built and Designed By: &nbsp;
                         <a href="https://www.ethanferrier.com" className="hover:text-blue-300 italic" target="_blank">
                             Ethan Ferrier
                         </a>
@@ -56,7 +56,7 @@ function Footer() {
                     <li className="list-none pt-2 text-sm">
                         Built in: &nbsp;
                         <a href="https://reactjs.org" className="hover:text-blue-300 italic" target="_blank">
-                            React
+                            ReactJs
                         </a>
                     </li>
                 </ul>

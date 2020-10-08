@@ -23,7 +23,7 @@ const Quote = ({ toggelDisplay }) => {
                                 <label className="block text-gray-700 text-sm font-bold mb-2" for="username">
                                     Your Name
                                  </label>
-                                <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="text" placeholder="Full Name" />
+                                <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="name" type="text" placeholder="Full Name" />
                             </div>
                             <div className="pl-2 flex-1">
                                 <label className="block text-gray-700 text-sm font-bold mb-2" for="email">
@@ -32,11 +32,21 @@ const Quote = ({ toggelDisplay }) => {
                                 <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="text" placeholder="...@gmail.com" />
                             </div>
                         </div>
-                        <div className="mb-4">
-                            <label className="block text-gray-700 text-sm font-bold mb-2" for="intro">
-                                Intro
-                             </label>
-                            <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="intro" type="text" placeholder="ie: full kitchen remodel" />
+                        <div className="mb-4 flex">
+                            <div className="flex-1 pr-2">
+                                <label className="block text-gray-700 text-sm font-bold mb-2" for="intro">
+                                    Intro
+                                 </label>
+                                <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="intro" type="text" placeholder="ie: full kitchen remodel" />
+
+                            </div>
+                            <div className="flex-1 pl-2">
+                                <label className="block text-gray-700 text-sm font-bold mb-2" for="intro">
+                                    Who Referd You
+                                 </label>
+                                <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="refered" type="text" placeholder="John Doe..." />
+
+                            </div>
                         </div>
                         <div className="flex">
                             <div className="w-full mb-4 pr-2">
@@ -44,7 +54,7 @@ const Quote = ({ toggelDisplay }) => {
                                     Work Type
                                 </label>
                                 <div className="relative">
-                                    <select className="block appearance-none w-full border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-state">
+                                    <select className="block appearance-none w-full border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="work-type">
                                         <option>Remodel</option>
                                         <option>New Build</option>
                                         <option>Addition</option>
@@ -59,7 +69,7 @@ const Quote = ({ toggelDisplay }) => {
                                     Buget
                                 </label>
                                 <div className="relative">
-                                    <select className="block appearance-none w-full border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-state">
+                                    <select className="block appearance-none w-full border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="buget">
                                         <option>$1,000 - $5,000</option>
                                         <option>$5,000 - $10,000</option>
                                         <option selected>$10,000 - $50,000</option>

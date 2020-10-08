@@ -7,11 +7,10 @@ import './App.css';
 
 
 function App() {
-  const [display, setDisplay] = useState(true)
+  const [display, setDisplay] = useState(false)
 
   const toggelDisplay = () => {
     setDisplay(!display)
-    console.log("the display is now ", display)
   }
   return (
     <div className="overflow-hidden">

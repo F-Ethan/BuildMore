@@ -29,6 +29,27 @@
 <body>
   <noscript>You need to enable JavaScript to run this app.</noscript>
   <div id="root" className="text-gray-900 bg-gray-100 overflow-hidden"></div>
+
+  <form name="Quote" netlify netlify-honeypot="bot-field" hidden>
+    <input id="name" type="text" placeholder="Full Name" />
+    <input id="email" type="text" placeholder="...@gmail.com" />
+    <input id="intro" type="text" placeholder="ie: full kitchen remodel" />
+    <input id="refered" type="text" placeholder="John Doe..." />
+    <select id="work-type">
+      <option value="Remodel">Remodel</option>
+      <option value="Addition">Addition</option>
+      <option value="New Build">New Build</option>
+    </select>
+    <select id="buget">
+      <option value="1k-5k">$1,000 - $5,000</option>
+      <option value="5k-10k">$5,000 - $10,000</option>
+      <option value="10k-50k" selected>$10,000 - $50,000</option>
+      <option value="50k-100k">$50,000 - $100,000</option>
+      <option value="100K+">$100,000 Up</option>
+    </select>
+    <textarea id="intro" rows="8" cols="50" placeholder=""></textarea>
+
+  </form>
   <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.

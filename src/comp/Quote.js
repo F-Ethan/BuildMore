@@ -24,13 +24,13 @@ const Quote = ({ toggelDisplay }) => {
                                 <label className="block text-gray-700 text-sm font-bold mb-2" for="username">
                                     Your Name
                                  </label>
-                                <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="name" type="text" placeholder="Full Name" />
+                                <input name="name" className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="name" type="text" placeholder="Full Name" />
                             </div>
                             <div className="pl-2 flex-1">
                                 <label className="block text-gray-700 text-sm font-bold mb-2" for="email">
                                     Your Email
                                  </label>
-                                <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="text" placeholder="...@gmail.com" />
+                                <input name="email" className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="text" placeholder="...@gmail.com" />
                             </div>
                         </div>
                         <div className="mb-4 flex">
@@ -38,14 +38,14 @@ const Quote = ({ toggelDisplay }) => {
                                 <label className="block text-gray-700 text-sm font-bold mb-2" for="intro">
                                     Intro
                                  </label>
-                                <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="intro" type="text" placeholder="ie: full kitchen remodel" />
+                                <input name="intro" className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="intro" type="text" placeholder="ie: full kitchen remodel" />
 
                             </div>
                             <div className="flex-1 pl-2">
                                 <label className="block text-gray-700 text-sm font-bold mb-2" for="intro">
                                     Who Referd You
                                  </label>
-                                <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="refered" type="text" placeholder="John Doe..." />
+                                <input name="refural" className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="refered" type="text" placeholder="John Doe..." />
 
                             </div>
                         </div>
@@ -55,7 +55,7 @@ const Quote = ({ toggelDisplay }) => {
                                     Work Type
                                 </label>
                                 <div className="relative">
-                                    <select className="block appearance-none w-full border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="work-type">
+                                    <select name="work_type" className="block appearance-none w-full border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="work-type">
                                         <option value="Remodel">Remodel</option>
                                         <option value="Addition">Addition</option>
                                         <option value="New Build">New Build</option>
@@ -66,7 +66,7 @@ const Quote = ({ toggelDisplay }) => {
                                 </div>
                             </div>
                             <div className="w-full mb-4 pl-2">
-                                <label className="block text-gray-700 text-sm font-bold mb-2" for="work-type">
+                                <label name="budget" className="block text-gray-700 text-sm font-bold mb-2" for="work-type">
                                     budget
                                 </label>
                                 <div className="relative">
@@ -88,7 +88,7 @@ const Quote = ({ toggelDisplay }) => {
                             <label className="block text-gray-700 text-sm font-bold mb-2" for="intro">
                                 Let us know more
                              </label>
-                            <textarea className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="intro" rows="8" cols="50" placeholder="" />
+                            <textarea name="more" className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="intro" rows="8" cols="50" placeholder="" />
                         </div>
                         <div className="flex items-center justify-between">
                             <button className="items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10" type="submit">
